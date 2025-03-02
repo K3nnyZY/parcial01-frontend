@@ -19,16 +19,18 @@
         <link rel="alternate" hreflang="en-GB" href="https://jobportal.com/en">
         <link rel="canonical" href="https://jobportal.com">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"rel="stylesheet"/>
         <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/homepage.css">
     </head>
 
     <body>  
-        <div class="container">
+        <div class="hero">
             <header>
                 <div class="navigation">
                     <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo"/>
-                    <p class="desktop">Job Portal</p>
+                    <p>Job Portal</p>
                 </div>
                 <nav aria-label="Main navigation">
                     <ul>
@@ -43,6 +45,53 @@
                     <button class="register-btn" arial-label="Register">Register</button>
                 </div>      
             </header>
+            <div class="container">
+                <div class="text-form">
+                    <div class="text">
+                        <h1 id="search-job-tittle"s>Find Your Dream Job Today!</h1>
+                        <p>Connecting Talent with Opportunity: Your Gateway to Career Success</p>
+                    </div>
+                    <form class="form">
+                        <input type="text" placeholder="Job tittle or company">
+                        <select><option>Select location</option></select>
+                        <select><option>Select category</option></select>
+                        <div class="search-btn" aria-label="Search Job">
+                            <img src="./assets/svg/search.svg" alt="Search Job"/>
+                            <p class="search-txt">Search Job</p>
+                        </div>
+                    </form>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <div class="icon-bg">
+                            <img src="./assets/svg/briefcase.svg" alt="Briefcase Logo"/>
+                        </div>
+                        <div class="description">
+                            <p class="number">25,850</p>
+                            <p class="text">Jobs</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="icon-bg">
+                            <img src="./assets/svg/community.svg" alt="Briefcase Logo"/>
+                        </div>
+                        <div class="description">
+                            <p class="number">10,250</p>
+                            <p class="text">Candidates</p>
+                        </div>
+                    </div>
+                    <div class="stat">
+                        <div class="icon-bg">
+                            <img src="./assets/svg/companies.svg" alt="Briefcase Logo"/>
+                        </div>
+                        <div class="description">
+                            <p class="number">18,400</p>
+                            <p class="text">Companies</p>
+                        </div>
+                    </div>
+                    </div>  
+                </div>  
+            </div>
         </div>
     </body>
 </html>
