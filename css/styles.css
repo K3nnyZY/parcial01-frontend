@@ -5,8 +5,7 @@
 }
 
 body {
-    font-family: "Figtree", sans-serif;
-
+    font-family: "Figtree";
 }
 
 header {
@@ -56,27 +55,27 @@ header nav ul li a:hover {
 }
 
 header .login-btn, header .register-btn {
-  font-family: "Figtree", sans-serif;
-  font-size: 16px;
-  color: white;
-  border: none;
-  padding: 12px 20px;
-  cursor: pointer;
-  border-radius: 8px;
+    font-family: "Figtree";
+    font-size: 16px;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    cursor: pointer;
+    border-radius: 8px;
 }
 
 header .login-btn {
-  background: none;
+    background: none;
 }
 
 header .login-btn:hover {
-  background: #8f8f8f;
+    background: #8f8f8f;
 }
 
 header .register-btn {
-  background-color: #309689;
+    background-color: #309689;
 }
 
 header .register-btn:hover {
-  background-color: #1b5850;
+    background-color: #1e6565;
 }
