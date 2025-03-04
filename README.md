@@ -1,5 +1,5 @@
 # parcial01-frontend
 
-*Integrants:*
+**Integrants:**
 - Kenny Zhu YE
 - Juan David Padilla
