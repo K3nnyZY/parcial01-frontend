@@ -6,6 +6,7 @@
 
 body {
     font-family: "Figtree";
+    overflow-x: auto;
 }
 
 header {
@@ -14,7 +15,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: auto;  /* Center the header */
+    margin: auto;
     max-width: 90%;
 }
 
@@ -34,7 +35,7 @@ header .navigation p {
 }
   
 header nav ul li {
-    display: inline; /* Displa  y the list items in a row */
+    display: inline; /* Display the list items in a row */
     margin: 0 20px;
 }
 
@@ -78,4 +79,169 @@ header .register-btn {
 
 header .register-btn:hover {
     background-color: #1e6565;
+}
+
+/* footer */  
+footer {
+    background-color: black;
+    width: 100%;
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+footer .text-icons {
+    display: flex;
+    flex-wrap: nowrap;
+    max-width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 114px;
+    overflow-x: auto;
+}
+
+footer .job {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .job .description .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+footer .job .description .logo img {
+    width: 28px;
+}
+
+footer .job .description .logo p {
+    color: white;
+    font-size: 20px;
+}
+
+footer .job .description >  p {
+    margin-top: 40px;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    opacity: 0.8;
+    line-height: 32px;
+    max-width: 350px;
+}
+
+
+footer .text-icons h6 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+footer .text-icons ul {
+    list-style: none;
+    margin-top: 24px;
+}
+  
+footer .text-icons ul li {
+    margin-bottom: 16px;
+    display: block;
+}
+  
+footer .text-icons ul li a {
+    text-decoration: none;
+    color: white;
+}
+  
+footer .text-icons ul li a:hover {
+    text-decoration: underline;
+}
+  
+footer .text-icons .newsletter p {
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 16px;
+}
+  
+footer .text-icons .newsletter form label {
+    display: none;
+}
+  
+footer .text-icons .newsletter form input {
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    border: 1px white solid;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 12px;
+    margin-top: 14px;
+    font-family: "Figtree", serif;
+}
+  
+footer .text-icons .newsletter form button {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #309689;
+    border: none;
+    margin-top: 14px;
+    border-radius: 12px;
+    transition: ease 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Figtree", serif;
+}
+
+footer .text-icons .newsletter form button:hover {
+    background-color: #1b5850;
+}
+  
+footer .text-icons .newsletter {
+    flex: 1
+}
+
+footer .text-icons .newsletter p {
+    color: white;
+    opacity: 0.8;
+    font-size: 14px;
+    margin-top: 16px;
+}
+  
+footer .text-icons .newsletter form label {
+    display: none;
+}
+  
+footer .text-icons .newsletter form input {
+    background-color: black;
+    color: white;
+    opacity: 0.6;
+    border: 1px white solid;
+    width: 100%;
+    height: 50px;
+    padding-left: 20px;
+    border-radius: 12px;
+    margin-top: 14px;
+    font-family: "Figtree", serif;
+}
+  
+footer .text-icons .newsletter form button {
+    width: 100%;
+    height: 50px;
+    color: white;
+    background-color: #309689;
+    border: none;
+    margin-top: 14px;
+    border-radius: 12px;
+    transition: ease 0.3s;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    font-family: "Figtree", serif;
+}
+  
+footer .text-icons .newsletter form button:hover {
+    background-color: #1b5850;
 }
