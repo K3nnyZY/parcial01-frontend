@@ -5,7 +5,7 @@
     height: 782px;
     display: grid;
     overflow: hidden;
-    grid-template-rows: 80px auto 128px;
+    grid-template-rows: 80px auto 128px; /* 1st row, 2nd row, 3rd row */
     overflow-x: auto;
     white-space: nowrap;
 }
@@ -213,5 +213,3 @@
         transform: translateX(-100%);
     }
 }
-
-
