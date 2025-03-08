@@ -49,33 +49,539 @@
             </div>
         </div> 
         <main>
-            <section class="jobs" aria-label="Job Listings">
+            <section class="jobs"">
                 <div class="container">
                     <aside>
-                    <div class="search-filters" aria-label="Job search filters">
-                        <div class="search-group">
-                            <label for="job-search" class="group-label"
-                                >Search by Job Title</label
-                            >
-                        </div>
-                        <div class="search-input-wrapper">
-                            <input type="search" placeholder="Job title or company"/>
-                            <img src="./assets/svg/search2.svg" alt="Search icon" />
-                        </div>
-                        <div class="filter-group">
-                            <label for="location" class="group-label">Location</label>
-                            <div class="select-wrapper">
-                                <select id="location" name="location">
-                                    <option value="">Choose city</option>
-                                </select>
-                                <img src="./assets/svg/map-pin2.svg" alt="map-pin2" />
+                        <div class="search-filters" aria-label="Job search filters">
+                            <div class="search-group">
+                                <label for="job-search" class="group-label">
+                                    Search by Job Title</label>
                             </div>
-                        </div>
-                    </div>
+                            <div class="search-input-wrapper">
+                                <input type="search" placeholder="Job title or company"/>
+                                <img src="./assets/svg/search2.svg" alt="Search icon" />
+                            </div>
+                            <div class="filter-group">
+                                <label for="location" class="group-label">Location</label>
+                                <div class="select-wrapper">
+                                    <select>
+                                        <option value="">Choose city</option>
+                                    </select>
+                                    <img src="./assets/svg/map-pin2.svg" alt="map-pin2" />
+                                </div>
+                            </div>
+                            <fieldset class="filter-group">
+                                <legend class="group-label">Category</legend>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="commerce">Commerce <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox">
+                                        <label for="telecommunications">Telecommunications <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="hotels-tourism">Hotels & Tourism <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="education">Education <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="financial-services">Financial Services <span class="count">10</span></label>
+                                    </div>
+                                </div>
+                                <button class="show-more">Show More</button>
+                            </fieldset>
+                            <fieldset class="filter-group">
+                                <legend class="group-label">Job Type</legend>
+                                <div class="checkbox-group">
+                                <div class="checkbox-item">
+                                    <input type="checkbox"/>
+                                    <label for="full-time">Full Time <span class="count">10</span></label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox"/><label for="part-time">Part Time <span class="count">10</span></label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox"/><label for="free-lance">Freelance <span class="count">10</span></label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox"/><label for="seasonal">Seasonal <span class="count">10</span></label>
+                                </div>
+                                <div class="checkbox-item">
+                                    <input type="checkbox"/>
+                                    <label for="fixed-price">Fixed-price <span class="count">10</span></label>
+                                </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filter-group">
+                                <legend class="group-label">Experience Level</legend>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="no-experience">No-experience <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="fresher">Fresher <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input
+                                        type="checkbox"/>
+                                        <label for="intermediate">Intermediate <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="expert">Expert <span class="count">10</span></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <fieldset class="filter-group">
+                                <legend class="group-label">Date Posted</legend>
+                                <div class="checkbox-group">
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="all">All <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" />
+                                        <label for="last-hour">Last Hour <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="last-24-hours">Last 24 Hours <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox"/>
+                                        <label for="last-7-days">Last 7 Days <span class="count">10</span></label>
+                                    </div>
+                                    <div class="checkbox-item">
+                                        <input type="checkbox" id="last-30-days" name="date" />
+                                        <label for="last-30-days">Last 30 Days <span class="count">10</span></label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                            <div class="filter-group">
+                                <label for="salary-range" class="group-label">Salary</label>
+                                <div class="salary-slider">
+                                    <input type="range"/>
+                                    <input type="range"/>   
+                                    <div class="track"></div>
+                                    <div class="range"></div>
+                                </div>
+                                <div class="salary-wrapper">
+                                    <div class="salary-value">Salary: $0 - $99999</div>
+                                    <button type="button" class="apply-btn">Apply</button>
+                                </div>
+                            </div>
+                            <div class="filter-group">
+                                <h3>Tags</h3>
+                                <div class="tags-container">
+                                <button type="button" class="tag">engineering</button>
+                                <button type="button" class="tag">design</button>
+                                <button type="button" class="tag">ui/ux</button>
+                                <button type="button" class="tag">marketing</button>
+                                <button type="button" class="tag">management</button>
+                                <button type="button" class="tag">soft</button>
+                                <button type="button" class="tag">construction</button>
+                                </div>
+                            </div>
+                        </div> 
+                        <div class="ad">
+                            <div class="img-wrapper">
+                                <img src="./assets/img/hiring.jpeg" alt="Job Advertisement Image"/>
+                            </div>
+                            <div class="content">
+                                <h3>WE ARE HIRING</h3>
+                                <p>Apply Today!</p>
+                            </div>
+                        </div>     
+                    </aside>
+                      <div class="jobs-list">
+                          <div class="results-stats">
+                              <p aria-label="Results count">Showing 6-6 of 10 results</p>
+                              <select name="sort" id="sort" aria-label="Sort jobs">
+                                  <option value="">Sort by latest</option>
+                                  <option value="">Sort by oldest</option>
+                                  <option value="">Sort by salary: low to high</option>
+                                  <option value="">Sort by salary: high to low</option>
+                              </select>
+                          </div>
+                          <div class="results">
+                              <div class="job">
+                                  <div class="save-btn" role="button" aria-label="Save job">
+                                      <img src="./assets/svg/icons/save.svg" alt="Save job"/>
+                                  </div>
+                                  <div class="time" aria-label="Posted 10 minutes ago">
+                                      10 min ago
+                                  </div>
+                                  <div class="details">
+                                  <div class="business-icon">
+                                      <img src="./assets/svg/business/fsd.svg"/>
+                                  </div>
+                                  <div>
+                                      <p class="position" aria-label="Job position">
+                                          Forward Security Director
+                                      </p>
+                                      <p class="location" aria-label="Job location">
+                                          Bauch, Schuppe and Schulist Co
+                                      </p>
+                                  </div>
+                                  </div>
+                                  <div class="details-2">
+                                      <div class="more-details">
+                                          <div class="item" aria-label="Industry: Hotels & Tourism">
+                                              <img src="./assets/svg/icons/tourism.svg"/>
+                                              <p>Hotels & Tourism</p>
+                                          </div>
+                                          <div class="item" aria-label="Job type: Full time">
+                                              <img src="./assets/svg/icons/clock.svg"/>
+                                              <p>Full time</p>
+                                          </div>
+                                          <div class="item">
+                                              <img src="./assets/svg/icons/wallet.svg"/>
+                                              <p>$40000-$42000</p>    
+                                          </div>
+                                          <div class="item">
+                                              <img src="./assets/svg/icons/map-pin.svg"/>
+                                              <p>New-York, USA</p>
+                                          </div>
+                                      </div>
+                                      <a href="./job-details.html">
+                                      <button class="job-details-btn">Job Details</button></a>
+                                  </div>
+                              </div>
+                              <div class="job">
+                                  <div class="save-btn" role="button" aria-label="Save job">
+                                      <img src="./assets/svg/icons/save.svg" alt="Save job"/>
+                                  </div>
+                                  <div class="time">
+                                      12 min ago
+                                  </div>
+                                  <div class="details">
+                                      <div class="business-icon">
+                                          <img src="./assets/svg/business/rcf.svg"/>
+                                      </div>
+                                  <div>
+                                      <p class="position" aria-label="Job position">
+                                          Regional Creative Facilitator
+                                      </p>
+                                      <p class="location" aria-label="Job location">
+                                          Wisozk - Becker Co
+                                      </p>
+                                  </div>
+                                  </div>
+                                  <div class="details-2">
+                                  <div class="more-details">
+                                      <div class="item">
+                                          <img src="./assets/svg/icons/tourism.svg"/>
+                                          <p>Media</p>
+                                      </div>
+                                      <div class="item" aria-label="Job type: Part time">
+                                          <img src="./assets/svg/icons/clock.svg"/>
+                                          <p>Part time</p>
+                                      </div>
+                                      <div class="item">
+                                          <img src="./assets/svg/icons/wallet.svg"/>
+                                          <p>$28000-$32000</p>
+                                      </div>
+                                      <div class="item" aria-label="Location: Los- Angeles, USA">
+                                          <img src="./assets/svg/icons/map-pin.svg"/>
+                                          <p>Los- Angeles, USA</p>
+                                      </div>
+                                  </div>
+                                  <a href="./job-details.html">
+                                      <button
+                                      class="job-details-btn"
+                                      aria-label="View job details for Regional Creative Facilitator"
+                                      >
+                                      Job Details
+                                      </button>
+                                  </a>
+                                  </div>
+                              </div>
+                              <div class="job">
+                                  <div class="save-btn" role="button" aria-label="Save job">
+                                      <img src="./assets/svg/icons/save.svg" alt="Save job"/>
+                                  </div>
+                                  <div class="time" aria-label="Posted 15 minutes ago">
+                                          15 min ago
+                                  </div>
+                                  <div class="details">
+                                    <div class="business-icon">
+                                      <img
+                                        src="./assets/svg/business/iip.svg"
+                                        alt="Company logo for Internal Integration Planner"
+                                      />
+                                    </div>
+                                    <div>
+                                      <p class="position" aria-label="Job position">
+                                        Internal Integration Planner
+                                      </p>
+                                      <p class="location" aria-label="Job location">
+                                        Mraz, Quigley and Feest Inc.
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="details-2">
+                                    <div class="more-details">
+                                      <div class="item" aria-label="Industry: Construction">
+                                          <img src="./assets/svg/icons/tourism.svg"/>
+                                        <p>Construction</p>
+                                      </div>
+                                      <div class="item" aria-label="Job type: Full time">
+                                          <img src="./assets/svg/icons/clock.svg"/>
+                                          <p>Full time</p>
+                                      </div>
+                                      <div class="item">
+                                        <img src="./assets/svg/icons/wallet.svg"/>
+                                        <p>$48000-$50000</p>
+                                      </div>
+                                      <div class="item">
+                                        <img src="./assets/svg/icons/map-pin.svg"/>
+                                        <p>Texas, USA</p>
+                                      </div>
+                                    </div>
+                                    <a href="./job-details.html">
+                                      <button
+                                        class="job-details-btn"
+                                        aria-label="View job details for Internal Integration Planner"
+                                      >
+                                        Job Details
+                                      </button></a
+                                    >
+                                  </div>
+                              </div>
+                              <div class="job">
+                                  <div class="save-btn" role="button" aria-label="Save job">
+                                      <img src="./assets/svg/icons/save.svg" alt="Save job"/>
+                                  </div>
+                                  <div class="time" aria-label="Posted 24 minutes ago">
+                                    24 min ago
+                                  </div>
+                                  <div class="details">
+                                    <div class="business-icon">
+                                      <img
+                                        src="./assets/svg/business/did.svg"
+                                        alt="Company logo for VonRueden - Weber Co"
+                                      />
+                                    </div>
+                                    <div>
+                                      <p class="position" aria-label="Job position">
+                                        District Intranet Director
+                                      </p>
+                                      <p class="location" aria-label="Job location">
+                                        VonRueden - Weber Co
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="details-2">
+                                    <div class="more-details">
+                                      <div class="item" aria-label="Industry: Commerce">
+                                          <img src="./assets/svg/icons/tourism.svg"/>
+                                        <p>Commerce</p>
+                                      </div>
+                                      <div class="item" aria-label="Job type: Full time">
+                                          <img src="./assets/svg/icons/clock.svg"/>
+                                          <p>Full time</p>
+                                      </div>
+                                      <div class="item">
+                                        <img src="./assets/svg/icons/wallet.svg"/>
+                                        <p>$42000-$48000</p>
+                                      </div>
+                                      <div class="item"A">
+                                        <img src="./assets/svg/icons/map-pin.svg"/>
+                                        <p>Florida, USA</p>
+                                      </div>
+                                    </div>
+                                    <a href="./job-details.html">
+                                      <button
+                                        class="job-details-btn"
+                                        aria-label="View job details for District Intranet Director"
+                                      >
+                                        Job Details
+                                      </button></a
+                                    >
+                                  </div>
+                              </div>
+                              <div class="job">
+                                  <div class="save-btn" role="button" aria-label="Save job">
+                                      <img src="./assets/svg/icons/save.svg" alt="Save job"/>
+                                  </div>
+                                  <div class="time" aria-label="Posted 26 minutes ago">
+                                    26 min ago
+                                  </div>
+                                  <div class="details">
+                                    <div class="business-icon">
+                                      <img
+                                        src="./assets/svg/business/ctf.svg"
+                                        alt="Company logo for Cormier, Turner and Flatley Inc"
+                                      />
+                                    </div>
+                                    <div>
+                                      <p class="position" aria-label="Job position">
+                                        Corporate Tactics Facilitator
+                                      </p>
+                                      <p class="location" aria-label="Job location">
+                                        Cormier, Turner and Flatley Inc
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="details-2">
+                                    <div class="more-details">
+                                      <div class="item" aria-label="Industry: Commerce">
+                                          <img src="./assets/svg/icons/tourism.svg"/>
+                                        <p>Commerce</p>
+                                      </div>
+                                      <div class="item" aria-label="Job type: Full time">
+                                          <img src="./assets/svg/icons/clock.svg"/>
+                                          <p>Full time</p>
+                                      </div>
+                                      <div class="item">
+                                        <img src="./assets/svg/icons/wallet.svg"/>
+                                        <p>$38000-$40000</p>
+                                      </div>
+                                      <div class="item"">
+                                        <img src="./assets/svg/icons/map-pin.svg"/>
+                                        <p>Boston, USA</p>
+                                      </div>
+                                    </div>
+                                    <a href="./job-details.html">
+                                      <button
+                                        class="job-details-btn"
+                                        aria-label="View job details for Corporate Tactics Facilitator"
+                                      >
+                                        Job Details
+                                      </button></a
+                                    >
+                                  </div>
+                              </div>
+                              <div class="job">
+                                  <div class="save-btn" role="button" aria-label="Save job">
+                                      <img src="./assets/svg/icons/save.svg" alt="Save job"/>
+                                  </div>
+                                  <div class="time" aria-label="Posted 30 minutes ago">
+                                    30 min ago
+                                  </div>
+                                  <div class="details">
+                                    <div class="business-icon">
+                                      <img
+                                        src="./assets/svg/business/fac.svg"
+                                        alt="Company logo for Miller Group"
+                                      />
+                                    </div>
+                                    <div>
+                                      <p class="position" aria-label="Job position">
+                                        Forward Accounts Consultant
+                                      </p>
+                                      <p class="location" aria-label="Job location">
+                                        Miller Group
+                                      </p>
+                                    </div>
+                                  </div>
+                                  <div class="details-2">
+                                    <div class="more-details">
+                                      <div class="item" aria-label="Industry: Financial Services">
+                                          <img src="./assets/svg/icons/tourism.svg"/>
+                                        <p>Financial services</p>
+                                      </div>
+                                      <div class="item" aria-label="Job type: Full time">
+                                          <img src="./assets/svg/icons/clock.svg"/>
+                                          <p>Full time</p>
+                                      </div>
+                                      <div class="item">
+                                        <img src="./assets/svg/icons/wallet.svg"/>
+                                        <p>$45000-$48000</p>
+                                      </div>
+                                      <div class="item"">
+                                        <img src="./assets/svg/icons/map-pin.svg"/>
+                                        <p>Boston, USA</p>
+                                      </div>
+                                    </div>
+                                    <a href="./job-details.html">
+                                      <button
+                                        class="job-details-btn"
+                                        aria-label="View job details for Forward Accounts Consultant"
+                                      >
+                                        Job Details
+                                      </button></a
+                                    >
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="change-pages">
+                            <div class="prev-btn" aria-label="Previous page"></div>
+                            <div class="pages">
+                              <button class="page-btn" aria-label="Page 1">1</button>
+                              <button class="page-btn" aria-label="Page 2">2</button>
+                            </div>
+                            <button class="next-btn" aria-label="Next page">
+                              Next
+                              <img src="./assets/svg/chevron-right.svg" alt="Next page"/>
+                            </button>
+                          </div>
+                      </div>
                 </div>
             </section>
+            <section class="top-companies">
+              <div class="container">
+                <h2 aria-label="Top Company Title">Top Company</h2>
+                <p aria-label="Top Company Description">
+                  At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
+                  Blandit a massa elementum
+                </p>
+                <div class="cards" aria-label="Company Cards">
+                  <div class="card" aria-label="Instagram Company Card">
+                    <img src="./assets/svg/top-companies/instagram.svg"/>
+                    <div class="company-name">
+                      Instagram
+                    </div>
+                    <p aria-label="Company Description">
+                      Elit velit mauris aliquam est diam. Leo sagittis consectetur
+                      diam morbi erat
+                    </p>
+                    <span aria-label="Number of Open Jobs">8 open jobs</span>
+                  </div>
+                  <div class="card" aria-label="Tesla Company Card">
+                    <img src="./assets/svg/top-companies/tesla.svg"/>
+                    <div class="company-name">
+                      Tesla
+                    </div>
+                    <p aria-label="Company Description">
+                      At pellentesque amet odio cras imperdiet nisl. Ac magna aliquet
+                      massa leo
+                    </p>
+                    <span aria-label="Number of Open Jobs">16 open jobs</span>
+                  </div>
+                  <div class="card" aria-label="McDonald's Company Card">
+                    <img src="./assets/svg/top-companies/mcdonald.svg"/>
+                    <div class="company-name">
+                      McDonald's
+                    </div>
+                    <p aria-label="Company Description">
+                      Odio aliquet tellus tellus maecenas. Faucibus in viverra
+                      venenatis phasellus
+                    </p>
+                    <span aria-label="Number of Open Jobs">12 open jobs</span>
+                  </div>
+                  <div class="card" aria-label="Apple Company Card">
+                    <img src="./assets/svg/top-companies/apple.svg"/>
+                    <div class="company-name">Apple</div>
+                    <p aria-label="Company Description">
+                      Et odio sem tellus ultrices posuere consequat. Tristique
+                      nascetur sapien
+                    </p>
+                    <span aria-label="Number of Open Jobs">9 open jobs</span>
+                  </div>
+                </div>
+              </div>
+            </section>
         </main>
-        <footer>
+    <footer>
             <div class="text-icons">
                 <div class="job">
                     <div class="description">
@@ -112,19 +618,19 @@
                 <div class="newsletter">
                     <h6>Newsletter</h6>
                     <p>
-                      Eu nunc pretium vitae platea. Non netus elementum vulputate
+                    Eu nunc pretium vitae platea. Non netus elementum vulputate
                     </p>
                     <form action="" aria-label="Newsletter Subscription Form">
-                      <label for="email" class="visually-hidden">Email Address</label>
-                      <input
+                    <label for="email" class="visually-hidden">Email Address</label>
+                    <input
                         type="email"
                         name="email"
                         id="email"
                         placeholder="Email Address"
                         required
                         aria-required="true"
-                      />
-                      <button type="submit">Subscribe now</button>
+                    />
+                    <button type="submit">Subscribe now</button>
                     </form>
                 </div>
             </div>
@@ -137,6 +643,6 @@
                     <a href="#" tabindex="0">Terms & Conditions</a>
                 </div>        
             </div>
-        </footer>
-    </body>
+    </footer>
+</body>
 </html>
