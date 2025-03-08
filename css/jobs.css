@@ -1,0 +1,131 @@
+.hero {
+    position: relative;
+    width: 100%;
+    height: 322px;
+    background-color: #000;
+}
+
+.hero .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero .title h1 {
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+
+main .jobs {
+    width: 100%;
+    padding-top: 60px;
+    padding-bottom: 120px;
+}
+
+main .jobs .container {
+    max-width: 80%;
+    margin: auto;
+    display: flex;
+    gap: 20px;
+}
+
+main .jobs .container aside {
+    max-width: 314px;
+}
+
+main .jobs .container aside .filter-btn {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    background-color: #309689;
+    color: white;
+    padding: 10px 0;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Figtree", serif;
+    justify-content: center;
+    margin-bottom: 40px;
+    transition: background-color 0.3s ease;
+    display: none;
+}
+
+main .jobs .container aside .filter-btn:hover {
+    background-color: #267a6e;
+}
+
+main .jobs .container .search-filters {
+    background-color: #ebf5f4;
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+}
+
+main .jobs .container .search-filters .search-group {
+    margin-bottom: 20px;
+}
+
+main .jobs .container .search-filters .filter-group {
+    margin-top: 20px;
+}
+
+main .jobs .container .search-filters .group-label {
+    font-size: 20px;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 15px;
+}
+
+main .jobs .container .search-input-wrapper {
+    position: relative;
+}
+
+main .jobs .container .search-input-wrapper input[type="search"] {
+    width: 100%;
+    padding: 12px 0;
+    padding-left: 2.5rem;
+    font-family: "Figtree", serif;
+    border-radius: 12px;
+    border: none;
+    font-size: 16px;
+    outline: none;
+}
+
+main .jobs .container .search-input-wrapper img {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    transform: translateY(-50%);
+}
+
+main .jobs .container .search-filters .select-wrapper {
+    position: relative;
+}
+
+main .jobs .container .search-filters select {
+    width: 100%;
+    padding: 12px 0;
+    padding-left: 2.5rem;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    font-size: 16px;
+    color: #6c757d;
+    outline: none;
+    font-family: "Figtree", serif;
+}
+
+main .jobs .container .search-filters .select-wrapper img {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+}
