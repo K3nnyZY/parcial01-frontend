@@ -27,10 +27,11 @@
     <body>  
         <div class="hero">
             <header>
-                <div class="navigation">
-                    <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo"/>
-                    <p>Job Portal</p>
-                </div>
+                <a class="navigation" role="banner" href="./index.html" aria-label="Homepage">
+                  <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo" />
+                  <p class="desktop">Job Portal</p>
+                  <p class="mobile">Jobs</p>
+                </a>
                 <nav aria-label="Main navigation">
                     <ul>
                         <li><a href="./index.html" class="press">Home</a></li>
@@ -53,7 +54,7 @@
                     <form class="form">
                         <input type="text" placeholder="Job tittle or company">
                         <select><option>Select location</option></select>
-                        <select><option>Select</option></select>
+                        <select><option>Select Category</option></select>
                         <div class="search-btn" aria-label="Search Job">
                             <img src="./assets/svg/search.svg" alt="Search Job"/>
                             <p class="search-txt">Search Job</p>
@@ -397,7 +398,7 @@
             </section>
             <section class="categories">
               <div class="container">
-                <h2>Browse by</h2>
+                <h2>Browse by Category</h2>
                 <p>
                   At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
                   Blandit a massa elementum id scel...
@@ -542,7 +543,7 @@
                       feugiat euismod volutpat...
                     </p>
                     <div class="btns">
-                      <button class="search-btn" aria-label="Search for a job">
+                      <button class="search-btn">
                         Search Job
                       </button>
                       <a
@@ -807,7 +808,7 @@
             </div>
             <div class="text">
                 <p class="copyright">
-                    &copy; 2021 Job Portal. All rights reserved. Designed by Figma.guru
+                    &copy; Copyright Job Portal 2024. Designed by Figma guru
                 </p>
                 <div class="links">
                     <a href="#" tabindex="0">Privacy Policy</a>

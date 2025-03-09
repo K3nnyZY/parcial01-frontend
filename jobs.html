@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Job Portal - Home</title>
+        <title>Job Portal - jobs</title>
 
         <meta name="description" content="Find your dream job with today!">
 
@@ -27,31 +27,37 @@
     <body>  
         <div class="hero">
             <header>
-                <div class="navigation">
-                    <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo"/>
-                    <p>Job Portal</p>
-                </div>
-                <nav aria-label="Main navigation">
-                    <ul>
-                        <li><a href="./index.html">Home</a></li>
-                        <li><a href="./jobs.html" class="press">Jobs</a></li>
-                        <li><a href="./about-us.html">About Us</a></li>
-                        <li><a href="./contact-us.html">Contact Us</a></li>
-                    </ul>
-                </nav>
-                <div>
-                    <button class="login-btn" arial-label="Login">Login</button>
-                    <button class="register-btn" arial-label="Register">Register</button>
-                </div>      
-            </header>
+              <a class="navigation" role="banner" href="./index.html" aria-label="Homepage">
+                <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo" />
+                <p class="desktop">Job Portal</p>
+                <p class="mobile">Jobs</p>
+              </a>
+              <nav aria-label="Main navigation">
+                  <ul>
+                      <li><a href="./index.html">Home</a></li>
+                      <li><a href="./jobs.html" class="press">Jobs</a></li>
+                      <li><a href="./about-us.html">About Us</a></li>
+                      <li><a href="./contact-us.html">Contact Us</a></li>
+                  </ul>
+              </nav>
+              <div>
+                  <button class="login-btn" arial-label="Login">Login</button>
+                  <button class="register-btn" arial-label="Register">Register</button>
+              </div>      
+          </header>
             <div class="title">
-                <h1>Jobs</h1>"
+                <h1 class="desktop">Jobs</h1>
+                <h1 class="mobile">Job Sidebar</h1>
             </div>
         </div> 
         <main>
             <section class="jobs"">
                 <div class="container">
                     <aside>
+                        <button class="filter-btn">
+                          Filters
+                          <img src="./assets/svg/filter.svg" alt="Filter icon"/>
+                        </button>
                         <div class="search-filters" aria-label="Job search filters">
                             <div class="search-group">
                                 <label for="job-search" class="group-label">
