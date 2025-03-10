@@ -1,0 +1,596 @@
+.info-section-top {
+    width: 1296px; /* Ancho total según la imagen */
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.info-section-top-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Esto centrará verticalmente los elementos */
+    gap: 40px;
+    margin-bottom: 40px;
+}
+.info-section-top-content h2 {
+    width: 579px; /* Ajusta según necesites */
+    font-size: 40px;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.paragraph-container {
+    width: 579px;
+    height: 83px;
+    position: relative;
+}
+
+.paragraph-container {
+    width: 579px;
+    height: 84px;
+    overflow: hidden;
+    display: flex; /* Añadido para centrar el párrafo */
+    align-items: center; /* Centra verticalmente */
+}
+
+.paragraph-container p {
+    width: 100%;
+    margin: 0;
+    color: #666;
+    line-height: 1.5; /* Ajustado el line-height */
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* Aumentado a 4 líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 2px 0; /* Añadido un pequeño padding vertical */
+}
+
+
+.info-section-image {
+    width: 1296px; /* Según las medidas que muestras */
+    height: 596px; /* Según las medidas que muestras */
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.info-section-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px); /* Para el efecto blur que se ve en la imagen */
+}
+
+/* Estilos para la sección How it works */
+.how-it-works {
+    width: 1296px;
+    margin: 80px auto;
+    padding-bottom: 120px;
+}
+
+.how-it-works-content {
+    text-align: center;
+}
+
+.how-it-works-content h2 {
+    font-size: 50px;
+    margin-bottom: 16px;
+    padding-bottom: 40px;
+}
+
+.how-it-works-content > p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto 48px;
+    padding-bottom: 60px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0;
+    list-style: none;
+}
+
+.step-card {
+    width: 306px; /* Ancho específico */
+    height: 280px; /* Alto específico */
+    padding: 32px;
+    background: #FFFFFF;
+    border: none;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 
+    0px 1px 3px rgba(0, 0, 0, 0.1); /* Sombra suave */
+
+}
+
+.step-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+}
+
+.step-icon img {
+    width: 24px;
+    height: 24px;
+    color: #309689;
+}
+
+.step-card h3 {
+    font-size: 20px;
+    margin: 0 0 8px 0;
+    color: #111827;
+}
+
+.step-card p {
+    color: #666;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 16px;
+    max-width: 242px; /* Ancho máximo para el texto */
+}
+.good-life-section {
+    position: relative;
+    width: 1296px;
+    height: 760px;
+    background: #2C2C2C; /* Fondo oscuro */
+    border-radius: 16px;
+    overflow: hidden;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+.video-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1296px;
+    height: 760px;
+    z-index: 1;
+}
+
+.play-button {
+    position: absolute;
+    top: 30%; /* Ajustado para estar más arriba */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    background: #309689;
+    margin-bottom: 60px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-button svg {
+    width: 48px;
+    height: 48px;
+    fill: white;
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 40px;
+    margin-top: 250px; /* Ajustado para estar más abajo del botón */
+}
+
+.main-title {
+    color: white;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.features-container {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.9); /* Fondo más oscuro para la barra inferior */
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start; /* Alineado al inicio para mejor espaciado */
+    gap: 12px;
+    padding: 16px;
+    color: white;
+    max-width: 300px;
+}
+
+.feature-number {
+    background: #309689;
+    color: white;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    flex-shrink: 0; /* Evita que el número se encoja */
+}
+
+.feature-text {
+    text-align: left;
+}
+
+.feature-text p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.learn-more {
+    color: #309689;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+.faq-section {
+    padding: 60px 20px;
+    width: 1296px; /* Ancho específico */
+    margin: 0 auto;
+}
+
+.faq-container {
+    width: 100%;
+}
+
+.faq-container h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    font-size: 50px;
+}
+
+.faq-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0; /* Eliminamos el espacio entre items */
+}
+
+.faq-item {
+    border-bottom: 1px solid #E5E7EB; /* Solo borde inferior */
+    border-radius: 0; /* Eliminamos el border radius */
+    overflow: hidden;
+    padding: 24px 0; /* Padding vertical */
+}
+
+.faq-item:first-child {
+    background: #F9FAFB; /* Fondo para el primer item */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.faq-item:last-child {
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    align-items: center;
+    padding: 0 24px; /* Padding horizontal */
+    background: transparent;
+    cursor: pointer;
+}
+
+.question-number {
+    color: #309689;
+    font-weight: 600;
+    margin-right: 16px;
+    width: 24px; /* Ancho fijo */
+    text-align: center; /* Centra el número */
+}
+
+.faq-question h3 {
+    flex-grow: 1;
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px; /* Alineación vertical del texto */
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #309689;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-answer {
+    padding: 16px 24px 0 64px; /* Ajustado el padding */
+    color: #666;
+    line-height: 1.5;
+}
+
+.faq-item.active {
+    background: #EBF5F4;
+}
+
+.faq-item:not(.active) .faq-answer {
+    display: none;
+}
+
+.plus-icon, .close-icon {
+    font-size: 16px;
+    color: #309689;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+}
+
+.plus-icon {
+    color: #309689;
+    border: 2px solid #309689;
+    border-radius: 50%;
+}
+
+.close-icon {
+    color: white;
+    background-color: #309689;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.best-section {
+    padding: 80px 20px;
+}
+
+.best-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+    gap: 80px; /* Aumenta el espacio entre la imagen y el contenido */
+}
+
+.image-grid {
+    width: 636px;
+    height: 562px;
+    display: flex;
+    gap: 24px;
+    flex-shrink: 0; /* Evita que las imágenes se encojan */
+}
+
+.large-image {
+    width: 306px; /* Ancho de la imagen grande */
+    height: 560px; /* Alto de la imagen grande */
+    filter: blur(8px); /* Añade el efecto blur */
+}
+
+.large-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px;
+    filter: blur(8px); /* Añade el efecto blur */
+}
+
+.small-images {
+    display: flex;
+    flex-direction: column;
+    gap: 22px; /* Espacio entre las dos imágenes pequeñas */
+    width: 306px; /* Ancho de la columna derecha */
+    filter: blur(8px); /* Añade el efecto blur */
+}
+
+.small-images img:first-child {
+    width: 100%;
+    height: 338px; /* Alto de la imagen superior */
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.small-images img:last-child {
+    width: 100%;
+    height: 200px; /* Alto de la imagen inferior */
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.content-container {
+    width: 600px; /* Ancho total del contenedor de contenido */
+    height: 362px; /* Alto total del contenedor de contenido */
+}
+
+.content-container h2 {
+    font-size: 40px;
+    line-height: 1.2;
+    margin-bottom: 16px;
+    color: #000;
+}
+
+.content-container p {
+    color: #666;
+    margin-bottom: 40px;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.features-grid {
+    width: 476px; /* Ancho específico del grid de características */
+    height: 152px; /* Alto específico del grid de características */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.feature {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.feature img {
+    width: 24px;
+    height: 24px;
+}
+
+.feature span {
+    color: #000;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.news-blog {
+    padding: 80px 0;
+}
+
+.container {
+    max-width: 1440px;
+    height: 817px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+}
+
+.news-blog h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 16px;
+    width: 1296px;
+    height: 88px;
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
+
+.subtitle {
+    text-align: center;
+    color: #666;
+    width: 630px; /* Cambiado de max-width a width fijo */
+    height: 12px;
+    margin: 0 auto 48px;
+    display: flex;
+    justify-content: center; /* Centra el texto horizontalmente */
+    align-items: center; /* Centra el texto verticalmente */
+}
+
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    width: 1296px;
+    height: 549px;
+}
+
+.blog-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 636px;
+    height: 400px;
+}
+
+.card-image {
+    position: relative;
+    height: 240px;
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(8px);
+}
+
+.tag {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.tag.news {
+    background: #309689;
+}
+
+.tag.blog {
+    background: #309689;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.card-content time {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 16px;
+    color: #333;
+}
+
+.read-more {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #309689;
+    text-decoration: none;
+    font-weight: 500;
+    transition: gap 0.3s;
+}
+
+.read-more:hover {
+    gap: 12px;
+}
+
+.read-more svg {
+    transition: transform 0.3s;
+}
+
+.read-more:hover svg {
+    transform: translateX(4px);
+}
