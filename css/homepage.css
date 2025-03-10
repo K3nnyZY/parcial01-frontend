@@ -103,7 +103,7 @@
 }
 
 .hero .container .form .search-btn:hover {
-    background-color: #1e6565;
+    background-color: #003b1a;
 }
 
 .hero .container .form .search-btn img {
@@ -339,7 +339,7 @@ main .jobs .jobs-list .job .stuff .job-details-btn {
 }
 
 main .jobs .jobs-list .job .stuff .job-details-btn:hover {
-    background-color: #1b5850;
+    background-color: #003b1a;
 }
 
 main .categories {
@@ -488,7 +488,7 @@ main .info-section .search .ad .btns .learn-more-link {
 }
 
 main .info-section .search .ad .btns .search-btn:hover {
-    background-color: #1b5850;
+    background-color: #003b1a;
 }
 
 main .info-section .stats {
@@ -574,7 +574,7 @@ main .banner .card .content button {
 }
 
 main .banner .card .content button:hover {
-    background-color: #1b5850;  
+    background-color: #003b1a;  
 }
 
 main .banner .card .img-wrapper {

@@ -62,7 +62,7 @@ main .career-listings .wrapper aside .filter-btn img {
 }
 
 main .career-listings .wrapper aside .filter-btn:hover {
-    background-color: #267a6e;
+    background-color: #003b1a;
 }
 
 main .career-listings .wrapper .search-filters {
@@ -197,7 +197,7 @@ main .career-listings .wrapper .search-filters .show-more {
 }
   
 main .career-listings .wrapper .search-filters .show-more:hover {
-    background-color: #267a6e;
+    background-color: #003b1a;
 }
   
 main .career-listings .wrapper .search-filters .filter-group .salary-slider {
@@ -282,7 +282,7 @@ main .career-listings .wrapper .search-filters .filter-group .salary-wrapper .ap
 }
 
 main .career-listings .wrapper .search-filters .filter-group .salary-wrapper .apply-btn:hover {
-    background-color: #267a6e;
+    background-color: #003b1a;
 }
 
 main .career-listings .wrapper .search-filters .filter-group h3 {
@@ -309,7 +309,7 @@ main .career-listings .wrapper .search-filters .filter-group .tags .tag {
 }
 
 main .career-listings .wrapper.search-filters .filter-group .tags .tag:hover {
-    background-color: #309689;
+    background-color: #003b1a;
     color: white;
 }
 
@@ -482,7 +482,7 @@ main .career-listings .list .job .details-2 .job-details-btn {
 }
   
 main .career-listings .list .job .details-2 .job-details-btn:hover {
-    background-color: #1b5850;
+    background-color: #003b1a;
 }  
 
 main .career-listings .wrapper .list .change-pages {
@@ -512,7 +512,7 @@ main .career-listings .wrapper .list .change-pages .pages .page-btn {
 }
   
 main .career-listings .wrapper .list .change-pages .pages .page-btn:hover {
-    background-color: #309689;
+    background-color: #003b1a;
     color: white;
     border: 2px solid transparent;
 }
@@ -540,7 +540,7 @@ main .career-listings .wrapper .list .change-pages .next-btn {
 }
   
 main .career-listings .wrapper .list .change-pages .next-btn:hover {
-    background-color: #309689;
+    background-color: #003b1a;
     color: white;
     border: 2px solid transparent;
 }
