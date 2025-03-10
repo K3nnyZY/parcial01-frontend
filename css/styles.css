@@ -76,7 +76,7 @@ header .login-btn {
 }
 
 header .login-btn:hover {
-    background: #8f8f8f;
+    background: #a09e9e;
 }
 
 header .register-btn {
@@ -84,7 +84,7 @@ header .register-btn {
 }
 
 header .register-btn:hover {
-    background-color: #1e6565;
+    background-color: #003b1a;
 }
 
 
@@ -202,7 +202,7 @@ footer .text-icons .newsletter form button {
 }
 
 footer .text-icons .newsletter form button:hover {
-    background-color: #1b5850;
+    background-color: #003b1a;
 }
   
 footer .text-icons .newsletter {
@@ -249,7 +249,7 @@ footer .text-icons .newsletter form button {
 }
   
 footer .text-icons .newsletter form button:hover {
-    background-color: #1b5850;
+    background-color: #003b1a;
 }
 
 footer .text {
