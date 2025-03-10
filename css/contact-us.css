@@ -200,7 +200,7 @@ main .map-section .map-container iframe {
     height: 60px;
 }
   
-  @media (max-width: 800px) {
+  @media (max-width: 900px) {
     .hero {
       height: 280px;
   }
