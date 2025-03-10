@@ -23,7 +23,13 @@ header .navigation {
     display: flex;
     align-items: center;
     gap: 10px;
+    text-decoration: none;
+    font-weight: medium;
 }
+
+header .navigation .mobile {
+    display: none;
+  }
 
 header .navigation img {
     width: 28px;
@@ -70,7 +76,7 @@ header .login-btn {
 }
 
 header .login-btn:hover {
-    background: #8f8f8f;
+    background: #a09e9e;
 }
 
 header .register-btn {
@@ -78,10 +84,10 @@ header .register-btn {
 }
 
 header .register-btn:hover {
-    background-color: #1e6565;
+    background-color: #003b1a;
 }
 
-/* footer */  
+
 footer {
     background-color: black;
     width: 100%;
@@ -91,7 +97,7 @@ footer {
 
 footer .text-icons {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     max-width: 85%;
     margin: auto;
     justify-content: space-between;
@@ -196,7 +202,7 @@ footer .text-icons .newsletter form button {
 }
 
 footer .text-icons .newsletter form button:hover {
-    background-color: #1b5850;
+    background-color: #003b1a;
 }
   
 footer .text-icons .newsletter {
@@ -243,7 +249,7 @@ footer .text-icons .newsletter form button {
 }
   
 footer .text-icons .newsletter form button:hover {
-    background-color: #1b5850;
+    background-color: #003b1a;
 }
 
 footer .text {
@@ -279,4 +285,59 @@ footer .text .links a {
 footer .text .links a:hover {
     text-decoration: underline;
     opacity: 1;
+}
+
+@media (max-width: 900px) {
+    header {
+      max-width: 90%;
+    }
+  
+    header .navigation .desktop {
+      display: none;
+    }
+  
+    header .navigation .mobile {
+      display: block;
+    }
+  
+    header nav {
+      display: none;
+    }
+
+    footer .text-icons {
+      max-width: 90%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 40px;
+      margin-top: 50px;
+    }
+  
+    footer .job {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px;
+    }
+  
+    footer .job .description .logo {
+      justify-content: center;
+    }
+  
+    footer .job .description > p {
+      max-width: none;
+    }
+  
+    footer .text {
+      flex-direction: column-reverse;
+      align-items: center;
+      margin-top: 40px;
+    }
+  
+    footer .text .copyright {
+      text-align: center;
+    }
+  
+    footer .text .links a {
+      margin: 10px;
+    }
 }

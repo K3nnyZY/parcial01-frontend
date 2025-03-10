@@ -27,10 +27,11 @@
     <body>  
         <div class="hero">
             <header>
-                <div class="navigation">
-                    <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo"/>
-                    <p>Job Portal</p>
-                </div>
+                <a class="navigation" role="banner" href="./index.html" aria-label="Homepage">
+                  <img src="./assets/svg/briefcase.svg" alt="Job Portal Logo" />
+                  <p class="desktop">Job Portal</p>
+                  <p class="mobile">Jobs</p>
+                </a>
                 <nav aria-label="Main navigation">
                     <ul>
                         <li><a href="./index.html" class="press">Home</a></li>
@@ -53,7 +54,7 @@
                     <form class="form">
                         <input type="text" placeholder="Job tittle or company">
                         <select><option>Select location</option></select>
-                        <select><option>Select</option></select>
+                        <select><option>Select Category</option></select>
                         <div class="search-btn" aria-label="Search Job">
                             <img src="./assets/svg/search.svg" alt="Search Job"/>
                             <p class="search-txt">Search Job</p>
@@ -126,7 +127,7 @@
                   >
                   <div class="jobs-list" role="list">
                     <div class="job" tabindex="0">
-                      <div class="save-btn"">
+                      <div class="save-btn">
                         <img src="./assets/svg/icons/save.svg" alt="Save job" />
                       </div>
                       <div class="time" aria-label="Posted 10 minutes ago">
@@ -148,8 +149,8 @@
                           </p>
                         </div>
                       </div>
-                      <div class="details-2">
-                        <div class="more-details">
+                      <div class="stuff">
+                        <div class="info">
                           <div class="item"">
                             <img src="assets/svg/icons/tourism.svg" alt="Hotels & Tourism"/>
                             <p>Hotels & Tourism</p>
@@ -200,8 +201,8 @@
                           </p>
                         </div>
                       </div>
-                      <div class="details-2">
-                        <div class="more-details">
+                      <div class="stuff">
+                        <div class="info">
                           <div class="item">
                             <img src="assets/svg/icons/tourism.svg" alt="Media"/>
                             <p>Media</p>
@@ -252,8 +253,8 @@
                           </p>
                         </div>
                       </div>
-                      <div class="details-2">
-                        <div class="more-details">
+                      <div class="stuff">
+                        <div class="info">
                           <div class="item">
                             <img src="assets/svg/icons/tourism.svg" alt="tourism"/>
                             <p>Construction</p>
@@ -304,8 +305,8 @@
                           </p>
                         </div>
                       </div>
-                      <div class="details-2">
-                        <div class="more-details">
+                      <div class="stuff">
+                        <div class="info">
                           <div class="item" aria-label="Industry: Commerce">
                             <img src="assets/svg/icons/tourism.svg" alt="Commerce"/>
                             <p>Commerce</p>
@@ -359,8 +360,8 @@
                           </p>
                         </div>
                       </div>
-                      <div class="details-2">
-                        <div class="more-details">
+                      <div class="stuff">
+                        <div class="info">
                           <div class="item">
                             <img src="assets/svg/icons/tourism.svg" alt="Commerce"/>
                             <p>Commerce</p>
@@ -397,7 +398,7 @@
             </section>
             <section class="categories">
               <div class="container">
-                <h2>Browse by</h2>
+                <h2>Browse by Category</h2>
                 <p>
                   At eu lobortis pretium tincidunt amet lacus ut aenean aliquet.
                   Blandit a massa elementum id scel...
@@ -521,7 +522,7 @@
                 </div>
               </div>
             </section>
-            <section class="info-block" aria-labelledby="information-block">
+            <section class="info-section">
               <div class="container">
                 <div class="search" role="search" aria-label="Job search section">
                   <div class="bg-img-wrapper">
@@ -531,7 +532,7 @@
                     />
                   </div>
                   <div class="ad">
-                    <h3 id="info-block-title">
+                    <h3 id="info-section-title">
                       Good Life Begins With A Good Company
                     </h3>
                     <p>
@@ -542,7 +543,7 @@
                       feugiat euismod volutpat...
                     </p>
                     <div class="btns">
-                      <button class="search-btn" aria-label="Search for a job">
+                      <button class="search-btn">
                         Search Job
                       </button>
                       <a
@@ -726,7 +727,7 @@
                         Revitalizing Workplace Morale: Innovative Tactics for Boosting
                         Employee Engagement in 2024
                       </h3>
-                      <a href="#" class="read-more-link">
+                      <a href="#" class="read">
                         <p>Read more</p>
                         <img src="./assets/svg/icons/arrow-right.svg" alt="Read More" />
                       </a>
@@ -742,7 +743,7 @@
                       <h3 class="title">
                         How to avoid the top six most common job interview mistakes
                       </h3>
-                      <a href="#" class="read-more-link"
+                      <a href="#" class="read"
                         >Read more
                       <img src="./assets/svg/icons/arrow-right.svg" alt="Read More" />
                       </a>
@@ -769,7 +770,7 @@
                 <div class="footer-section">
                     <h6>Company</h6>
                     <ul>
-                        <li><a href="#">About Us</a></li>
+                        <li><a href="./about-us.html">About Us</a></li>
                         <li><a href="#">Our Team</a></li>
                         <li><a href="#">Partners</a></li>
                         <li><a href="#">For Candidates</a></li>
@@ -807,7 +808,7 @@
             </div>
             <div class="text">
                 <p class="copyright">
-                    &copy; 2021 Job Portal. All rights reserved. Designed by Figma.guru
+                    &copy; Copyright Job Portal 2024. Designed by Figma guru
                 </p>
                 <div class="links">
                     <a href="#" tabindex="0">Privacy Policy</a>
