@@ -22,24 +22,24 @@
     text-align: center;
 }
 
-main .jobs {
+main .career-listings {
     width: 100%;
     padding-top: 60px;
     padding-bottom: 120px;
 }
 
-main .jobs .container {
+main .career-listings .wrapper {
     max-width: 85%;
     margin: auto;
     display: flex;
     gap: 20px;
 }
 
-main .jobs .container aside {
+main .career-listings .wrapper aside {
     max-width: 314px;
 }
 
-main .jobs .container aside .filter-btn {
+main .career-listings .wrapper aside .filter-btn {
     display: flex;
     width: 100%;
     background-color: #309689;
@@ -55,42 +55,42 @@ main .jobs .container aside .filter-btn {
     display: none;;
 }
 
-main .jobs .container aside .filter-btn img {
+main .career-listings .wrapper aside .filter-btn img {
     width: 24px;
     height: 24px;
     vertical-align: middle; /* Evita desalineaciones */
 }
 
-main .jobs .container aside .filter-btn:hover {
+main .career-listings .wrapper aside .filter-btn:hover {
     background-color: #267a6e;
 }
 
-main .jobs .container .search-filters {
+main .career-listings .wrapper .search-filters {
     background-color: #ebf5f4;
     padding: 2rem 1.5rem;
     border-radius: 20px;
 }
 
-main .jobs .container .search-filters .search-group {
+main .career-listings .wrapper .search-filters .search-group {
     margin-bottom: 20px;
 }
 
-main .jobs .container .search-filters .filter-group {
+main .career-listings .wrapper .search-filters .filter-group {
     margin-top: 20px;
 }
 
-main .jobs .container .search-filters .group-label {
+main .career-listings .wrapper .search-filters .group-label {
     font-size: 20px;
     font-weight: 600;
     display: block;
     margin-bottom: 15px;
 }
 
-main .jobs .container .search-input-wrapper {
+main .career-listings .wrapper .search-input-wrapper {
     position: relative;
 }
 
-main .jobs .container .search-input-wrapper input[type="search"] {
+main .career-listings .wrapper .search-input-wrapper input[type="search"] {
     width: 100%;
     padding: 12px 0;
     padding-left: 2.5rem;
@@ -101,7 +101,7 @@ main .jobs .container .search-input-wrapper input[type="search"] {
     outline: none;
 }
 
-main .jobs .container .search-input-wrapper img {
+main .career-listings .wrapper .search-input-wrapper img {
     position: absolute;
     top: 50%;
     left: 10px;
@@ -110,11 +110,11 @@ main .jobs .container .search-input-wrapper img {
     transform: translateY(-50%);
 }
 
-main .jobs .container .search-filters .select-wrapper {
+main .career-listings .wrapper .search-filters .select-wrapper {
     position: relative;
 }
 
-main .jobs .container .search-filters select {
+main .career-listings .wrapper .search-filters select {
     width: 100%;
     padding: 12px 0;
     padding-left: 2.5rem;
@@ -127,7 +127,7 @@ main .jobs .container .search-filters select {
     font-family: "Figtree", serif;
 }
 
-main .jobs .container .search-filters .select-wrapper img {
+main .career-listings .wrapper .search-filters .select-wrapper img {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -136,11 +136,11 @@ main .jobs .container .search-filters .select-wrapper img {
     transform: translateY(-50%);
 }
 
-main .jobs .container .search-filters fieldset {
+main .career-listings .wrapper .search-filters fieldset {
     border: none;
 }
   
-main .jobs .container .search-filters input[type="checkbox"] {
+main .career-listings .wrapper .search-filters input[type="checkbox"] {
     appearance: none;
     width: 16px;
     height: 16px;
@@ -149,23 +149,23 @@ main .jobs .container .search-filters input[type="checkbox"] {
     border-radius: 4px;
 }
   
-main .jobs .container .search-filters input[type="checkbox"]:checked {
+main .career-listings .wrapper .search-filters input[type="checkbox"]:checked {
     border: none;
     background-color: #309689;
 }
   
-main .jobs .container .search-filters .checkbox-group {
+main .career-listings .wrapper .search-filters .checkbox-group {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
   
-main .jobs .container .search-filters .checkbox-item {
+main .career-listings .wrapper .search-filters .checkbox-item {
     display: flex;
     align-items: center;
 }
   
-main .jobs .container .search-filters .checkbox-item label {
+main .career-listings .wrapper .search-filters .checkbox-item label {
     padding-left: 5px;
     width: 100%;
     display: flex;
@@ -173,7 +173,7 @@ main .jobs .container .search-filters .checkbox-item label {
     justify-content: space-between;
 }
 
-main .jobs .container .search-filters .count {
+main .career-listings .wrapper .search-filters .count {
     color: #666;
     font-size: 16px;
     background-color: white;
@@ -181,7 +181,7 @@ main .jobs .container .search-filters .count {
     border-radius: 12px;
 }
   
-main .jobs .container .search-filters .show-more {
+main .career-listings .wrapper .search-filters .show-more {
     margin-top: 20px;
     background-color: #309689;
     color: white;
@@ -196,17 +196,17 @@ main .jobs .container .search-filters .show-more {
     transition: background-color 0.3s ease;
 }
   
-main .jobs .container .search-filters .show-more:hover {
+main .career-listings .wrapper .search-filters .show-more:hover {
     background-color: #267a6e;
 }
   
-main .jobs .container .search-filters .filter-group .salary-slider {
+main .career-listings .wrapper .search-filters .filter-group .salary-slider {
     position: relative;
     width: 100%;
     height: 8px;
 }
 
-main .jobs .container .search-filters .filter-group .salary-slider .track {
+main .career-listings .wrapper .search-filters .filter-group .salary-slider .track {
     position: relative;
     width: 100%;
     height: 4px;
@@ -214,7 +214,7 @@ main .jobs .container .search-filters .filter-group .salary-slider .track {
     border-radius: 4px;
 }
   
-main .jobs .container .search-filters .filter-group .salary-slider .range {
+main .career-listings .wrapper .search-filters .filter-group .salary-slider .range {
     position: absolute;
     width: 50%;
     margin-top: -4px;
@@ -223,7 +223,7 @@ main .jobs .container .search-filters .filter-group .salary-slider .range {
     border-radius: 4px;
 }
 
-main .jobs .container .search-filters .filter-group .salary-slider input[type="range"] {
+main .career-listings .wrapper .search-filters .filter-group .salary-slider input[type="range"] {
     position: absolute;
     top: 0;
     width: 100%;
@@ -234,7 +234,7 @@ main .jobs .container .search-filters .filter-group .salary-slider input[type="r
     z-index: 3;
 }
 
-main .jobs .container .search-filters .filter-group .salary-slider input[type="range"]::-webkit-slider-thumb {
+main .career-listings .wrapper .search-filters .filter-group .salary-slider input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -245,7 +245,7 @@ main .jobs .container .search-filters .filter-group .salary-slider input[type="r
     border: none;
 }
 
-main .jobs .container .search-filters .filter-group .salary-slider input[type="range"]::-moz-range-thumb {
+main .career-listings .wrapper .search-filters .filter-group .salary-slider input[type="range"]::-moz-range-thumb {
     appearance: none;
     width: 20px;
     height: 20px;
@@ -256,19 +256,19 @@ main .jobs .container .search-filters .filter-group .salary-slider input[type="r
     border: none;
 }
 
-main .jobs .container .search-filters .filter-group .salary-wrapper {
+main .career-listings .wrapper .search-filters .filter-group .salary-wrapper {
     margin-top: 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-main .jobs .container .search-filters .filter-group .salary-wrapper .salary-value {
+main .career-listings .wrapper .search-filters .filter-group .salary-wrapper .salary-value {
     font-size: 16px;
     font-weight: 600;
 }
 
-main .jobs .container .search-filters .filter-group .salary-wrapper .apply-btn {
+main .career-listings .wrapper .search-filters .filter-group .salary-wrapper .apply-btn {
     background-color: #309689;
     color: white;
     padding: 5px 20px;
@@ -281,23 +281,23 @@ main .jobs .container .search-filters .filter-group .salary-wrapper .apply-btn {
     transition: background-color 0.3s ease;
 }
 
-main .jobs .container .search-filters .filter-group .salary-wrapper .apply-btn:hover {
+main .career-listings .wrapper .search-filters .filter-group .salary-wrapper .apply-btn:hover {
     background-color: #267a6e;
 }
 
-main .jobs .container .search-filters .filter-group h3 {
+main .career-listings .wrapper .search-filters .filter-group h3 {
     font-size: 20px;
     font-weight: 600;
 }
   
-main .jobs .container .search-filters .filter-group .tags-container {
+main .career-listings .wrapper .search-filters .filter-group .tags {
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
   
-main .jobs .container .search-filters .filter-group .tags-container .tag {
+main .career-listings .wrapper .search-filters .filter-group .tags .tag {
     background-color: rgba(49, 150, 137, 0.1);
     border: none;
     padding: 5px 10px;
@@ -308,12 +308,12 @@ main .jobs .container .search-filters .filter-group .tags-container .tag {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-main .jobs .container.search-filters .filter-group .tags-container .tag:hover {
+main .career-listings .wrapper.search-filters .filter-group .tags .tag:hover {
     background-color: #309689;
     color: white;
 }
 
-main .jobs .container .ad {
+main .career-listings .wrapper .ad {
     width: 100%;
     height: 460px;
     margin-top: 24px;
@@ -324,61 +324,61 @@ main .jobs .container .ad {
     position: relative;
 }
 
-main .jobs .container .ad:hover {
+main .career-listings .wrapper .ad:hover {
     transform: scale(1.02); /* 2% bigger */     
     transform: brightness(0.9);
 }
 
-main .jobs .container .ad .img-wrapper {
+main .career-listings .wrapper .ad .img-wrapper {
     width: 100%;
     height: 100%;
     background-color: #c2c2c2;
 }
 
-main .jobs .container .ad .img-wrapper img {
+main .career-listings .wrapper .ad .img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     filter: blur(20px) brightness(0.6);
 }
 
-main .jobs .container .ad .content {
+main .career-listings .wrapper .ad .content {
     position: absolute;
     z-index: 1;
     top: 26px;
     left: 26px;
 }
 
-main .jobs .container .ad .content h3 {
+main .career-listings .wrapper .ad .content h3 {
     font-size: 32px;
     font-weight: bold;
     color: white;
 }
 
-main .jobs .container .ad .content p {
+main .career-listings .wrapper .ad .content p {
     font-size: 24px;
     color: white;
     font-weight: 500;
     margin-top: 10px;
 }
 
-main .jobs .container .jobs-list {
+main .career-listings .wrapper .list {
     flex: 1;
 }
 
-main .jobs .container .jobs-list .results-stats {
+main .career-listings .wrapper .list .results-stats {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-main .jobs .container .jobs-list .results-stats p {
+main .career-listings .wrapper .list .results-stats p {
     font-size: 20px;
     font-weight: 500;
     color: #6c757d;
 }
 
-main .jobs .container .jobs-list .results-stats select {
+main .career-listings .wrapper .list .results-stats select {
     height: 40px;
     padding-left: 15px;
     border-radius: 5px;
@@ -390,7 +390,7 @@ main .jobs .container .jobs-list .results-stats select {
     color: #6c757d;
 }
   
-main .jobs .jobs-list .results {
+main .career-listings .list .results {
     width: 100%;
     margin-top: 50px;
     display: flex;
@@ -398,7 +398,7 @@ main .jobs .jobs-list .results {
     gap: 24px;
 }
   
-main .jobs .jobs-list .job {
+main .career-listings .list .job {
     width: 100%;
     position: relative;
     border-radius: 20px;
@@ -406,7 +406,7 @@ main .jobs .jobs-list .job {
     padding: 40px;
 }
 
-main .jobs .jobs-list .job .save-btn {
+main .career-listings .list .job .save-btn {
     position: absolute;
     top: 40px;
     right: 40px;
@@ -414,7 +414,7 @@ main .jobs .jobs-list .job .save-btn {
     color: #6c757d;
 }
   
-main .jobs .jobs-list .job .time {
+main .career-listings .list .job .time {
     user-select: none;
     background-color: rgba(48, 150, 137, 0.1);
     display: inline-block;
@@ -424,51 +424,51 @@ main .jobs .jobs-list .job .time {
     font-size: 16px;
 }
   
-main .jobs .jobs-list .job .details {
+main .career-listings .list .job .details {
     margin-top: 24px;
     display: flex;
     gap: 20px;
 }
   
-main .jobs .jobs-list .job .details .position {
+main .career-listings .list .job .details .position {
     font-size: 28px;
     font-weight: 600;
 }
   
-main .jobs .jobs-list .job .details .location {
+main .career-listings .list .job .details .location {
     font-size: 16px;
     margin-top: 5px;
 }
 
-main .jobs .jobs-list .job .details-2 {
+main .career-listings .list .job .details-2 {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
   
-main .jobs .jobs-list .job .details-2 .more-details {
+main .career-listings .list .job .details-2 .more-details {
     display: flex;
     gap: 20px;
 }
   
-main .jobs .jobs-list .job .details-2 .more-details .item {
+main .career-listings .list .job .details-2 .more-details .item {
     display: flex;
     gap: 8px;
     align-items: center;
 }
   
-main .jobs .jobs-list .job .details-2 .more-details .item svg {
+main .career-listings .list .job .details-2 .more-details .item svg {
     color: #309689;
 }
   
-main .jobs .jobs-list .job .details-2 .more-details .item p {
+main .career-listings .list .job .details-2 .more-details .item p {
     font-size: 16px;
     color: #6c757d;
     font-weight: 600;
 }
   
-main .jobs .jobs-list .job .details-2 .job-details-btn {
+main .career-listings .list .job .details-2 .job-details-btn {
     font-size: 16px;
     font-weight: 600;
     color: white;
@@ -481,24 +481,24 @@ main .jobs .jobs-list .job .details-2 .job-details-btn {
     transition: 0.3s ease;      
 }
   
-main .jobs .jobs-list .job .details-2 .job-details-btn:hover {
+main .career-listings .list .job .details-2 .job-details-btn:hover {
     background-color: #1b5850;
 }  
 
-main .jobs .container .jobs-list .change-pages {
+main .career-listings .wrapper .list .change-pages {
     margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
   
-main .jobs .container .jobs-list .change-pages .pages {
+main .career-listings .wrapper .list .change-pages .pages {
     display: flex;
     align-items: center;
     gap: 25px;
 }
   
-main .jobs .container .jobs-list .change-pages .pages .page-btn {
+main .career-listings .wrapper .list .change-pages .pages .page-btn {
     color: #6c757d;
     font-size: 20px;
     font-weight: 600;
@@ -511,19 +511,19 @@ main .jobs .container .jobs-list .change-pages .pages .page-btn {
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
   
-main .jobs .container .jobs-list .change-pages .pages .page-btn:hover {
+main .career-listings .wrapper .list .change-pages .pages .page-btn:hover {
     background-color: #309689;
     color: white;
     border: 2px solid transparent;
 }
   
-main .jobs .container .jobs-list .change-pages .pages .page-btn:first-child {
+main .career-listings .wrapper .list .change-pages .pages .page-btn:first-child {
     background-color: #309689;
     color: white;
     border: none;
 }
   
-main .jobs .container .jobs-list .change-pages .next-btn {
+main .career-listings .wrapper .list .change-pages .next-btn {
     background: none;
     color: #6c757d;
     border: 2px solid #6c757d;
@@ -539,7 +539,7 @@ main .jobs .container .jobs-list .change-pages .next-btn {
     transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
   
-main .jobs .container .jobs-list .change-pages .next-btn:hover {
+main .career-listings .wrapper .list .change-pages .next-btn:hover {
     background-color: #309689;
     color: white;
     border: 2px solid transparent;
@@ -552,31 +552,31 @@ main .top-companies {
     padding-bottom: 120px;
   }
   
-main .top-companies .container {
+main .top-companies .wrapper {
     max-width: 85%;
     margin: auto;
   }
   
-main .top-companies .container h2 {
+main .top-companies .wrapper h2 {
     font-size: 50px;
     font-weight: bold;
     text-align: center;
   }
   
-main .top-companies .container > p {
+main .top-companies .wrapper > p {
     font-size: 16px;
     text-align: center;
     margin-top: 20px;
   }
   
-main .top-companies .container .cards {
+main .top-companies .wrapper .cards {
     margin-top: 60px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
   }
   
-main .top-companies .container .cards .card {
+main .top-companies .wrapper .cards .card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -586,14 +586,14 @@ main .top-companies .container .cards .card {
     justify-content: space-between;
   }
   
-main .top-companies .container .cards .card .company-name {
+main .top-companies .wrapper .cards .card .company-name {
     margin-top: 10px;
     font-size: 24px;
     font-weight: 600;
     text-align: center;
   }
   
-main .top-companies .container .cards .card p {
+main .top-companies .wrapper .cards .card p {
     font-size: 16px;
     text-align: center;
     margin-top: 10px;
@@ -601,7 +601,7 @@ main .top-companies .container .cards .card p {
     opacity: 0.8;
   }
   
-main .top-companies .container .cards .card span {
+main .top-companies .wrapper .cards .card span {
     margin-top: 30px;
     font-size: 16px;
     background-color: rgba(49, 150, 137, 0.1);
@@ -627,82 +627,82 @@ main .top-companies .container .cards .card span {
       display: none;
     }
   
-    main .jobs {
+    main .career-listings {
       padding: 40px 0;
     }
   
-    main .jobs .container {
+    main .career-listings .wrapper {
       max-width: 90%;
       flex-direction: column;
       gap: 50px;
     }
   
-    main .jobs .container aside {
+    main .career-listings .wrapper aside {
       max-width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
   
-    main .jobs .container aside .filter-btn {
+    main .career-listings .wrapper aside .filter-btn {
       display: block;
     }
   
-    main .jobs .container aside .ad {
+    main .career-listings .wrapper aside .ad {
       margin-top: 40px;
       width: 314px;
       height: 460px;
     }
   
-    main .jobs .container .jobs-list .results-stats p {
+    main .career-listings .wrapper .list .results-stats p {
       font-size: 12px;
     }
   
-    main .jobs .container .jobs-list .results-stats select {
+    main .career-listings .wrapper .list .results-stats select {
       width: 148px;
       font-size: 16px;
     }
   
-    main .jobs .jobs-list .job .details {
+    main .career-listings .list .job .details {
       flex-direction: column;
       gap: 10px;
     }
   
-    main .jobs .jobs-list .job .details .location {
+    main .career-listings .list .job .details .location {
       margin-top: 10px;
     }
   
-    main .jobs .jobs-list .job .details-2 {
+    main .career-listings .list .job .details-2 {
       margin-top: 40px;
       flex-direction: column;
       align-items: start;
       gap: 40px;
     }
   
-    main .jobs .jobs-list .job .details-2 .more-details {
+    main .career-listings .list .job .details-2 .more-details {
       flex-direction: column;
     }
   
-    main .jobs .jobs-list .job .details-2 a {
+    main .career-listings .list .job .details-2 a {
       width: 100%;
     }
   
-    main .jobs .jobs-list .job .details-2 .job-details-btn {
+    main .career-listings .list .job .details-2 .job-details-btn {
       width: 100%;
     }
   
-    main .jobs .container .jobs-list .pagination .pages .page-btn {
+    main .career-listings .wrapper .list .pagination .pages .page-btn {
       width: 28px;
       height: 28px;
       border-radius: 8px;
       font-size: 16px;
     }
   
-    main .jobs .container .jobs-list .pagination .prev-btn {
+    main .career-listings .wrapper .list .pagination .prev-btn {
       display: none;
     }
   
-    main .jobs .container .jobs-list .pagination .next-btn {
+    main .career-listings .wrapper .list .pagination .next-btn {
       font-size: 16px;
       padding: 0 10px;
       height: 28px;
@@ -713,19 +713,19 @@ main .top-companies .container .cards .card span {
       padding: 40px 0;
     }
   
-    main .top-companies .container {
+    main .top-companies .wrapper {
       max-width: 90%;
     }
   
-    main .top-companies .container h2 {
+    main .top-companies .wrapper h2 {
       font-size: 28px;
     }
   
-    main .top-companies .container .cards {
+    main .top-companies .wrapper .cards {
       grid-template-columns: repeat(1, 1fr);
     }
   
-    main .top-companies .container .cards .card {
+    main .top-companies .wrapper .cards .card {
       height: 360px;
     }
-  }
+}

@@ -301,31 +301,31 @@ main .jobs .jobs-list .job .details .location {
     margin-top: 5px;
 }
 
-main .jobs .jobs-list .job .details-2 {
+main .jobs .jobs-list .job .stuff {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     align-items: end;
 }
 
-main .jobs .jobs-list .job .details-2 .more-details {
+main .jobs .jobs-list .job .stuff .info {
     display: flex;
     gap: 20px;
 }
 
-main .jobs .jobs-list .job .details-2 .more-details .item {
+main .jobs .jobs-list .job .stuff .info .item {
     display: flex;
     gap: 8px;
     align-items: center;
 }
 
-main .jobs .jobs-list .job .details-2 .more-details .item p {
+main .jobs .jobs-list .job .stuff .info .item p {
     font-size: 16px;
     color: #6c757d;
     font-weight: 600;
 }
 
-main .jobs .jobs-list .job .details-2 .job-details-btn {
+main .jobs .jobs-list .job .stuff .job-details-btn {
     font-size: 16px;
     font-weight: 600;
     color: white;
@@ -338,7 +338,7 @@ main .jobs .jobs-list .job .details-2 .job-details-btn {
     transition: 0.3s ease;
 }
 
-main .jobs .jobs-list .job .details-2 .job-details-btn:hover {
+main .jobs .jobs-list .job .stuff .job-details-btn:hover {
     background-color: #1b5850;
 }
 
@@ -414,24 +414,24 @@ main .categories .cards .card .content .category-jobs-count {
     border-radius: 8px;
 }
 
-main .info-block {
+main .info-section {
     width: 100%;
     padding-top: 120px;
     padding-bottom: 60px;
 }
 
-main .info-block .container {
+main .info-section .container {
     margin: auto;
     max-width: 80%;
 }
 
-main .info-block .search {
+main .info-section .search {
     display: flex;
     align-items: center;
     gap: 80px;
 }
 
-main .info-block .search .bg-img-wrapper {
+main .info-section .search .bg-img-wrapper {
     width: 30vw;
     height: 30vw;
     border-radius: 20px;
@@ -439,7 +439,7 @@ main .info-block .search .bg-img-wrapper {
     background-color: #888d92;
 }
 
-main .info-block .search .bg-img-wrapper img {
+main .info-section .search .bg-img-wrapper img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -447,27 +447,27 @@ main .info-block .search .bg-img-wrapper img {
     filter: blur(20px);
 }
 
-main .info-block .search .ad {
+main .info-section .search .ad {
     max-width: 600px;
     flex: 1;
 }
 
-main .info-block .search .ad h3 {
+main .info-section .search .ad h3 {
     font-size: 50px;
     font-weight: bold;
 }
 
-main .info-block .search .ad p {
+main .info-section .search .ad p {
     margin-top: 40px;
     font-size: 16px;
     line-height: 24px;
 }
 
-main .info-block .search .ad .btns {
+main .info-section .search .ad .btns {
     margin-top: 60px;
 }
 
-main .info-block .search .ad .btns .search-btn {
+main .info-section .search .ad .btns .search-btn {
     color: white;
     background-color: #309689;
     border: none;
@@ -480,42 +480,42 @@ main .info-block .search .ad .btns .search-btn {
     font-family: "Figtree", serif;
 }
 
-main .info-block .search .ad .btns .learn-more-link {
+main .info-section .search .ad .btns .learn-more-link {
     color: #309689;
     font-size: 16px;
     font-weight: 600;
     margin-left: 24px;
 }
 
-main .info-block .search .ad .btns .search-btn:hover {
+main .info-section .search .ad .btns .search-btn:hover {
     background-color: #1b5850;
 }
 
-main .info-block .stats {
+main .info-section .stats {
     margin-top: 90px;
     display: flex;
     justify-content: space-between;
 }
 
-main .info-block .stats .stat {
+main .info-section .stats .stat {
     max-width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-main .info-block .stats .stat .number {
+main .info-section .stats .stat .number {
     font-size: 40px;
     font-weight: bold;
     color: #309689;
 }
 
-main .info-block .stats .stat .title {
+main .info-section .stats .stat .title {
     font-size: 24px;
     font-weight: 600;
 }
 
-main .info-block .stats .stat .description {
+main .info-section .stats .stat .description {
     font-size: 16px;
     line-height: 24px;
 }
@@ -758,7 +758,7 @@ main .blog .posts .post .content .title {
   font-weight: 600;
 }
 
-main .blog .posts .post .content .read-more-link {
+main .blog .posts .post .content .read {
   font-size: 16px;
   color: #309689;
   font-weight: 600;
@@ -782,11 +782,11 @@ main .blog .posts .post .content .read-more-link {
     gap: 20px;
   }
 
-  .hero .container .text-form .text h1{
+  .hero .container .text-form .text h1 {
     font-size: 32px;
   }
 
-  .hero .container .text-form .text p{
+  .hero .container .text-form .text p {
     font-size: 18px;
   }
 
@@ -846,7 +846,7 @@ main .blog .posts .post .content .read-more-link {
   }
 
   .hero .logos .logos-wrapper img {
-    margin: 0 20px
+    margin: 0 20px;
   }
 
   main .jobs .container {
@@ -884,22 +884,22 @@ main .blog .posts .post .content .read-more-link {
     margin-top: 10px;
   }
 
-  main .jobs .jobs-list .job .details-2 {
+  main .jobs .jobs-list .job .stuff {
     margin-top: 40px;
     flex-direction: column;
     align-items: start;
     gap: 40px;
   }
 
-  main .jobs .jobs-list .job .details-2 .more-details {
+  main .jobs .jobs-list .job .stuff .info {
     flex-direction: column;
   }
 
-  main .jobs .jobs-list .job .details-2 a {
+  main .jobs .jobs-list .job .stuff a {
     width: 100%;
   }
 
-  main .jobs .jobs-list .job .details-2 .job-details-btn {
+  main .jobs .jobs-list .job .stuff .job-details-btn {
     width: 100%;
   }
 
@@ -923,67 +923,67 @@ main .blog .posts .post .content .read-more-link {
     gap: 8vw;
   }
 
-  main .info-block {
+  main .info-section {
     padding: 40px 0;
   }
 
-  main .info-block .container {
+  main .info-section .container {
     max-width: 90%;
   }
 
-  main .info-block .search {
+  main .info-section .search {
     flex-direction: column;
     gap: 40px;
   }
 
-  main .info-block .search .bg-img-wrapper {
+  main .info-section .search .bg-img-wrapper {
     width: 100%;
     padding-top: 100%;
     position: relative;
   }
 
-  main .info-block .search .bg-img-wrapper img {
+  main .info-section .search .bg-img-wrapper img {
     position: absolute;
     top: 0;
     left: 0;
   }
 
-  main .info-block .search .ad h3 {
+  main .info-section .search .ad h3 {
     text-align: center;
     font-size: 28px;
   }
 
-  main .info-block .search .ad p {
+  main .info-section .search .ad p {
     text-align: center;
     margin-top: 30px;
   }
 
-  main .info-block .search .ad .btns {
+  main .info-section .search .ad .btns {
     margin-top: 80px;
     width: 100%;
   }
 
-  main .info-block .search .ad .btns .search-btn {
+  main .info-section .search .ad .btns .search-btn {
     width: 100%;
   }
 
-  main .info-block .search .ad .btns .learn-more-link {
+  main .info-section .search .ad .btns .learn-more-link {
     display: none;
   }
 
-  main .info-block .stats {
+  main .info-section .stats {
     margin-top: 40px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
   }
 
-  main .info-block .stats .stat {
+  main .info-section .stats .stat {
     text-align: center;
     gap: 10px;
   }
 
-  main .info-block .stats .stat .number {
+  main .info-section .stats .stat .number {
     font-size: 60px;
   }
 
