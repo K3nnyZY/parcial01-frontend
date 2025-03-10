@@ -23,7 +23,7 @@ main .contact-section {
 }
   
 main .contact-section .contact-container {
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
     display: flex;
     gap: 60px;
@@ -31,7 +31,7 @@ main .contact-section .contact-container {
 }
   
 main .contact-section .contact-container .contact-info {
-    flex: 1;
+    flex: 1; /* 1:1 equal width */
 }
   
 main .contact-section .contact-container .contact-info h2 {
@@ -47,7 +47,7 @@ main .contact-section .contact-container .contact-info > p {
 main .contact-section .contact-container .contact-info .info-grid {
     margin-top: 50px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 40px 0;
 }
   
@@ -174,7 +174,7 @@ main .map-section {
 }
   
 main .map-section .map-container {
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
 }
   
@@ -190,7 +190,7 @@ main .map-section .map-container iframe {
 }
   
 .partners-section .partners-container {
-    max-width: 80%;
+    max-width: 85%;
     margin: auto;
     display: flex;
     justify-content: space-around;
