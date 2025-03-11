@@ -1,0 +1,379 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+/* Estilos del anuncio de trabajo */
+.job-posting {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Encabezado */
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.time-ago {
+    color: #309689;
+    font-size: 14px;
+    border-radius: 50px;
+    padding: 5px 10px;
+    background-color: #30968819;
+}
+
+.bookmark {
+    color: #adb5bd;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+/* Sección de título */
+.job-title-section {
+    display: flex;
+    align-items: center;
+    padding: 0 20px 15px;
+}
+
+.company-logo {
+    width: 55px;
+    height: 55px;
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.company-logo img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-title {
+    font-size: 28px;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.company-name {
+    color: #131414;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+/* Detalles rápidos */
+.job-quick-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 20px;
+    border-top: 1px solid #eee;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    color: #6c757d;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.detail-item i {
+    margin-right: 8px;
+    color: #309689;
+    font-size: 16px;
+}
+
+.apply-button {
+    background-color: #309689;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    width: 100%; /* Asegura que ocupe todo el ancho disponible */
+    max-width: 360px; /* Ajusta este valor según sea necesario */
+}
+
+.apply-btn-wrapper {
+    margin-left: auto;
+    width: 360px; /* Ajusta este valor para que coincida con el ancho del formulario */
+}
+.apply-button:hover {
+    background-color: #239178;
+}
+
+/* Contenido principal */
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+.main-content {
+    flex: 2;
+    padding: 20px;
+}
+
+.sidebar {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+}
+
+/* Estilos de secciones */
+section {
+    margin-bottom: 30px;
+}
+
+section h2 {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Descripción del trabajo */
+.job-description p {
+    margin-bottom: 15px;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* Listas con checkmarks */
+.responsibilities-list,
+.skills-list {
+    list-style: none;
+}
+
+.responsibilities-list li,
+.skills-list li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.responsibilities-list li::before,
+.skills-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: #2baa8e;
+    font-weight: bold;
+}
+
+/* Etiquetas */
+.tags-section h2 {
+    display: inline-block;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.tags-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+    vertical-align: middle;
+}
+
+.tag {
+    background-color: #e8f5f2;
+    color: #309689;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+/* Resumen del trabajo */
+.job-overview {
+    background-color: #e8f5f2;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.overview-item {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.overview-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #e8f5f2;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.overview-icon i {
+    color: #309689;
+    font-size: 16px;
+}
+
+.overview-details h3 {
+    font-size: 15px;
+    color: #6c757d;
+    margin-bottom: 5px;
+    font-weight: normal;
+}
+
+.overview-details p {
+    font-size: 15px;
+    color: #333;
+}
+
+/* Mapa */
+.map-container {
+    margin-top: 25px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.location-map {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Formulario de contacto */
+.contact-form {
+    background-color: #e8f5f2;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #adb5bd;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.last-form-group input {
+    height: 160px;
+    line-height: 1.5;
+    padding-top: 12px;
+}
+
+.form-group input::placeholder {
+    color: #adb5bd;
+}
+
+.send-message-btn {
+    width: 100%;
+    background-color: #309689;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 20px;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+.send-message-btn:hover {
+    background-color: #239178;
+}
+
+
+/* Responsive */
+@media (max-width: 992px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .job-quick-info {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .detail-item {
+        margin-bottom: 10px;
+    }
+    
+    .apply-btn-wrapper {
+        margin-left: 0;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .apply-button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .job-title {
+        font-size: 24px;
+    }
+    
+    .job-header, 
+    .job-title-section, 
+    .job-quick-info, 
+    .main-content, 
+    .sidebar {
+        padding: 15px;
+    }
+}
